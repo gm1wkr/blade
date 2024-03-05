@@ -1,0 +1,197 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+body {
+    background-color: $body-bg;
+    color: #555;
+    min-height: 100vh;
+    
+}
+
+body {
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    background-color: #f0f4f7;
+}
+
+main {
+    min-height: 60vh;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid $laravel-border-color;
+    padding-top: 1rem;
+}
+
+footer {
+    font-size: 90%;
+    border-top: 1px solid $laravel-border-color;
+    padding-top: 1rem;
+}
+
+
+// REMOVE BEFORE FLIGHT
+.debug {
+    background-color: aquamarine;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3.8rem;
+    font-weight: 100;
+    text-align: right;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin: 4rem 0 2rem 0;
+}
+
+ul {
+    list-style: none;
+    max-width: 67ch;
+
+    & li {
+        margin-top: 1rem;
+    }
+}
+
+ul.info-list {
+    list-style-type: none;
+    padding-left: 1rem;
+    
+    li {
+        position: relative;
+        padding: 0 1.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    li::before {
+        content: '→';
+        position: absolute;
+        left: 0;
+        color: #acacac;
+    }
+}
+
+.logo-wrapper {
+    max-width: 200px;
+    min-height: 65px;
+    overflow: hidden;
+
+    & img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.breadcrumb-wrapper {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid $laravel-border-color;
+}
+
+.breadcrumbs {
+    // border-bottom: 1px solid #555;
+
+    & ul{    
+        font-size: 90%;
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        padding-bottom: .6rem;
+
+        & li {
+            margin-right: 1rem;
+        }
+
+        & li:not(:first-child):before {
+            content: '>';
+            color: #bbb;
+            margin-right: .6rem;
+        }
+    }
+}
+
+.h-100 {
+    min-height: 70vh;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.content-wrapper {
+    background-color: #f8f8f8;
+    max-width: 520px;
+    margin: 0 auto 2rem auto;
+    padding: 2rem;
+}
+
+.panel-wrapper {
+    height: 100%;
+    margin-top: 2rem;
+    border: none;
+}
+
+.panelx {
+    background-color: transparent;
+    height: 100%;
+    padding-top: 2rem;
+}
+
+form {
+    border: 1px solid lighten($laravel-border-color, 5%);
+    border-radius: 6px;
+    max-width: 520px;
+    background-color: #f8f8f8;
+    padding: 1.4rem;
+    margin: 1rem auto 2rem auto;
+
+    .form-group {
+        margin-bottom: 2rem;
+    }
+}
+
+.popover {
+    background-color: lighten(#000, 88%);
+    border-color: transparent;
+    color: #000;
+
+    .arrow {
+        color: #1b4292;
+    }
+    
+    .popover-title {
+        background-color: lighten(#000, 80%);
+        font-weight: 700;
+    }
+}
