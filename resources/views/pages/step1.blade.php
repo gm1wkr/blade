@@ -5,7 +5,7 @@
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
     <h2>Your Details</h2>
-    <p>Please enter you details below. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora nemo odio fugit quisquam vero debitis, unde maiores rem eius eligendi ut maxime doloribus deserunt dolorem qui reprehenderit, atque tenetur.</p>
+    <p>Please enter your details below. </p>
 
     <div class="form-group">
         <label for="basic-url">Student ID</label>
@@ -28,13 +28,15 @@
     <div class="form-group">
         <label for="basic-url">Type of Student</label>
         <select class="form-control" name="" id="">
-            <option value="">Postgraduate</option>
-            <option value="">New Undergraduate</option>
-            <option value="">Returning</option>
-            <option value="">PGDE</option>
-            <option value="">Erasmus</option>
-            <option value="">Study Abroad Exchange</option>
+            @foreach ($student_level as $key => $value)
+                <option value="{{ $key }}">{{ $value }}</option>
+            @endforeach
         </select>
+    </div>
+
+    <div class="form-group">
+        <label for="basic-url">Date of Birth</label>
+        <input type="date" class="form-control" placeholder="Student ID">
     </div>
 
     <div class="form-group">

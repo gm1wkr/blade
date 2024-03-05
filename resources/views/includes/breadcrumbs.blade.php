@@ -9,7 +9,7 @@
                     <a href="#">Apply for Accommodation</a>
                 </li>
                 <li>
-                    <a href="#">Your Identity</a>
+                    Your Identity
                 </li>
             </ul>
         </div>

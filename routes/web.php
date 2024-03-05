@@ -16,7 +16,17 @@ Route::get('/', function () {
 });
 
 Route::get('/step1', function () {
-    return view('pages.step1');
+
+    $student_level = [
+        "1" => 'Postgraduate',
+        "2" => 'New Undergraduate',
+        "3" => 'Returning Student',
+        "4" => 'PGDE Student',
+        "5" => 'ERASMUS',
+        "6" => 'Study Abroad Exchange Student',
+    ]; 
+
+    return view('pages.step1', ['student_level' => $student_level]);
 });
 
 Route::get('/step2', function () {

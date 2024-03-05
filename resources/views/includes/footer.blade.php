@@ -1,6 +1,6 @@
 <footer>
     <div class="text-center flex-col-end">
-        <p class="help-block">© 2024 University of Aberdeen</p>
+        <p class="help-block">© {{ date('Y') }} University of Aberdeen</p>
         <p class="help-block help-block-login text-center">
 <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 For technical support please contact the University of Aberdeen Service Desk at
