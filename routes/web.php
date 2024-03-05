@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/step1', function () {
     return view('pages.step1');
 });
+
+Route::get('/step2', function () {
+    return view('pages.step2');
+});

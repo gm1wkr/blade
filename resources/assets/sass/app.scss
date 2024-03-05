@@ -6,18 +6,12 @@
 @import "variables";
 
 body {
-    background-color: $body-bg;
-    color: #555;
-    min-height: 100vh;
-    
-}
-
-body {
+    background-color: #f0f4f7;
+    color: #494949;
     font-family: Source Sans Pro,sans-serif;
     font-size: 18px;
     line-height: 1.6;
-    color: #444;
-    background-color: #f0f4f7;
+    min-height: 100vh;
 }
 
 main {
@@ -179,6 +173,10 @@ form {
     .form-group {
         margin-bottom: 2rem;
     }
+
+    label {
+        color: #494949;
+    }
 }
 
 .popover {
@@ -194,4 +192,9 @@ form {
         background-color: lighten(#000, 80%);
         font-weight: 700;
     }
+}
+
+.error {
+    color: $brand-danger;
+    font-weight: 500;
 }
